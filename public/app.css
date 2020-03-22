@@ -1,0 +1,12 @@
+i.icon {
+	font-size: 2em;
+}
+
+img {
+	height: 320px;
+	width: 420px;
+}
+
+#inline {
+	display: inline-block;
+}
