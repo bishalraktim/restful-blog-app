@@ -1,7 +1,7 @@
 Restful-Blog-App
 ================
 
-> A RESTful blog web application using Node.js, Express.js, MongoDB and Semantic UI
+> A RESTful blog web application created using Node.js, Express.js, MongoDB and Semantic UI
 
 #### RESTful ROUTES are as follows:
 > - **INDEX:** /blogs *HTTP METHOD: GET* 
@@ -12,7 +12,7 @@ Restful-Blog-App
 > - **UPDATE:** /blogs/:id/ *HTTP METHOD: PUT*
 > - **DELETE:** /blogs/:id *HTTP METHOD: DELETE* 
 
-Please follow the following instructions to run the application:
-1. Start the database (mongodb)
+> Please follow the following instructions to run the application:
+1. Start the database (mongod)
 2. Run **node app.js**
-3. Go to http://localhost:3000/ 
+3. Go to http://localhost:3000/ (or your running URL and Port) 
