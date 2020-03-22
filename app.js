@@ -1,9 +1,9 @@
-var bodyParser			= require("body-parser"),
+var bodyParser 			= require("body-parser"),
 	methodOverride 		= require("method-override"),
-	mongoose			= require("mongoose"),
-	express				= require("express"),
+	mongoose 			= require("mongoose"),
+	express 			= require("express"),
 	expressSanitizer 	= require("express-sanitizer"),
-	app					= express();
+	app 				= express();
 
 
 //APP CONFIG
@@ -53,12 +53,8 @@ app.get("/blogs/new", function(req, res){
 
 //CREATE ROUTE
 app.post("/blogs", function(req, res){
-	// console.log(req.body);
-	// req.body.blog.body = req.sanitize(req.body.blog.body);
+	req.body.blog.body = req.sanitize(req.body.blog.body);
 	// console.log("***********", req.body);
-	
-	//console.log(req.body.blog);
-	//console.log(req.body.blog.title);
 	Blog.create(req.body.blog, function(err, createdBlog){
 		if(err){
 			res.render("new");
