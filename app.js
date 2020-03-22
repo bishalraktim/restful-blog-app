@@ -1,9 +1,9 @@
-var bodyParser 			= require("body-parser"),
-	methodOverride 		= require("method-override"),
-	mongoose 			= require("mongoose"),
-	express 			= require("express"),
-	expressSanitizer 	= require("express-sanitizer"),
-	app 				= express();
+var bodyParser = require("body-parser"), 
+	methodOverride = require("method-override"), 
+	mongoose = require("mongoose"), 
+	express = require("express"), 
+	expressSanitizer = require("express-sanitizer"), 
+	app = express();
 
 
 //APP CONFIG
